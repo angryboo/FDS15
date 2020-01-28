@@ -340,6 +340,14 @@ body {
     width: 100px;
     height: 20px;
 } */
+
+
+
+
+
+
+
+
 .sign {
     list-style: none;
     background-color: #fff;
@@ -359,6 +367,127 @@ body {
 .sign a {
     display: inline-block;
     padding: 8px 0;
+}
+
+/* 유효성 검사 배너 */
+.validation-list {
+    padding: 0;
+    margin: 25px 0;
+    list-style: none;
+ }
+ .validation-list li {
+    margin-top: 10px; 
+ }
+ .validation-list li a {
+     display: block;   
+     border: 1px solid #aaa;
+     border-radius: 35px;
+     background: 
+         url(./images/validation_icon.png) no-repeat 20px 50%,
+         #ccc linear-gradient(180deg, #bbb, #eee);
+     /* line-height: 30px; */
+     padding: 7px 10px 8px 45px;
+ }
+ .validation-list li:nth-child(1) {
+     /* margin-bottom: 10px; */
+ }
+
+
+ /* 웹 관련 용어 */
+
+ .term {
+    background: #ccc linear-gradient(180deg, #bbb, #eee);
+    width: 250px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+ }
+ .term-heading {
+    font-size: 1.6rem;
+    margin: 0 0 15px 0;
+ }
+ .term-list {
+    margin: 0; 
+
+ }
+ .term-list-subject {
+    margin-left: 0;
+    margin: 0 0 5px 0;
+    color: #296897;
+    font-weight: 400;
+    display: inline-block;
+ }
+ .odd .term-list-thumbnail {
+    margin-left: 0;
+    float: left;
+    margin-right: 10px;
+ }
+ .even {
+     margin-top: 15px;
+ }
+ .even .term-list-thumbnail {
+    margin-left: 0;
+    float: right;
+    margin-left: 10px;
+ }
+ .term-list-thumbnail img {
+    vertical-align: top;
+ }
+
+.term-list-brief {
+    margin: 0;
+    display: inline-block;
+    width: 148px;
+    line-height: 1.6;
+}
+
+/* 검색 폼 */
+.search-form {
+    background: #ccc linear-gradient(180deg, #bbb, #eee);
+    /* border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa; */
+    border: 1px solid #aaa;
+    border-bottom-color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 25px 10px 25px;
+}
+.search-form fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; */
+}
+.search-form div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-form label, .search-form input[type="search"], .btn-search {
+    vertical-align: middle;
+}
+.search-form input[type="search"] {
+    width: 200px;
+    margin: 0 4px;
+    padding: 1px 1px 1px .5em;
+}
+.btn-search, .search-form input[type="search"] {
+    height: 24px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+
+}
+.btn-search {
+    color: #fff;
+    background-color: #333;
+    padding: 0 8px;
+    font-size: 1.2rem;
+
 }
 
 .slogan {
