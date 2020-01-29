@@ -1,0 +1,32 @@
+.notice {
+    background-color: aquamarine;
+}
+.notice-heading {
+    background-color: tomato
+}
+.notice-list {
+    background-color: violet;
+}
+
+.notice-list a, .pds-list a {
+    display: inline-block;
+    width: 305px;
+    background-color: wheat;
+}
+.notice-more
+{
+    background-color: yellow;
+}
+.pds {
+    background-color: lightsalmon;
+}
+.pds-heading {
+    background-color: tomato
+}
+.pds-list {
+    background-color: violet;
+}
+.pds-more{
+    background-color: yellow;
+}
+
