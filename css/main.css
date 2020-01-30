@@ -678,6 +678,58 @@ body {
     color: hsla(110, 50%, 30%, 1);   
 }
 
+/* 신규 이벤트 및 관련사이트 */
+
+.gradint-box {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background:#ccc linear-gradient(180deg, #bbb, #eee);
+
+}
+.event {
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+.event-heading {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+.point-color {
+    color: #ed552f;
+}
+.event-thumbnail, .event-brife {
+    margin: 10px 0;
+}
+.event-thumbnail img{
+    box-shadow: 5px 5px 0 0px #aaa;
+    border: 1px solid #888;
+    display: block;
+}
+.event-brife {
+
+}
+
+.btn-event {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn-event-prev, .btn-event-next {
+    border: none;
+    background-image: url(./images/back_forward.png);
+    /* font-size: 0px; */
+    width: 19px;
+    height: 18px;
+    padding: 18px 0 0 0;
+    overflow: hidden;
+}
+.btn-event-prev {
+    background-position: 0 0;
+}
+.btn-event-next {
+    background-position: 100% 0;
+}    
 
 .slogan {
     background-color: orange;
