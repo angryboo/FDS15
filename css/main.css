@@ -497,6 +497,37 @@ body {
     width: 380px;
     position: relative;
     padding-top: 45px;
+    margin-top: 20px;
+  }
+  .board{
+    padding-top: 0;
+  }
+  .board div ul, .board ul+a{
+    display: none;
+  }
+  .section-act ul, .section-act ul+a{
+    display: block !important;
+  }
+  .tab-list{
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 20px;
+  }  
+  .tab-list [role="tab"]{
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    padding: 8px 10px;
+    color: #888;
+    cursor: pointer;
+  }
+   .tab-list [aria-selected="true"]{
+    background: #fff !important;
+    border-color: orangered orangered white orangered !important;
+    color: orangered !important;
   }
   .notice-list, .notice-more, .pds-list, .pds-more{
     display: none;
@@ -569,7 +600,83 @@ body {
     color: hsla(110, 50%, 30%, 1);
   }
 
+/* 새소식 */
 
+.news {
+    position: relative;
+    margin-top: 20px;
+}
+.news::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background:#888 linear-gradient(90deg, #bbb, #fff);
+    display: block;
+    top: 35px;
+    left: 0;
+}
+
+.news-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ed552f;
+    margin: 0 0 40px 0;
+    /* width: 310px;
+    border-bottom: 1px solid darkgray; */
+}
+/* .news-heading::after {
+    content: "";
+    width: 310px;
+    height: 1px;
+    background:#888 linear-gradient(90deg, #bbb, #fff);
+    display: block;
+    margin-top: 18px;
+} */
+
+.news-link {
+    display: block;
+}
+.news-item {
+    padding-left: 125px;
+    position: relative;
+    margin-top: 24px;
+    min-height: 100px;
+}
+.new-item-subject {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.news-item-brife {
+    margin: 10px 0 0 0;
+    line-height: 1.6;
+}
+
+
+.news-item-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.news-item-thumbnail img {
+    box-shadow: 0 15px 20px 2px #aaa;
+    display: block;
+    margin-bottom: 15px;
+}
+.news-more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+
+}
+.news-more .icon-plus {
+    color: hsla(110, 50%, 30%, 1);   
+}
 
 
 .slogan {
